@@ -1,0 +1,199 @@
+@import 'meny.css';
+@import 'main.css';
+@import 'order.css';
+@import 'catalogSet.css';
+@import 'goToCart.css';
+@import 'modalOrder.css';
+@import 'mobiele.css';
+@import 'mobiele__meny.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+@import 'simplebar.css';
+
+
+:root {
+   --index: calc(1vw + 1vh);
+
+   --main-background-color: #F2F2F2;
+   --main-color-text: #A4ACAD;
+   --modal-window-background-color: #f1f6f6;
+   --main-color-btn: #F2F2F2;
+   --main-color-black: #000000;
+   --main-color-black-citys: #000000;
+   --main-color-white: #fff;
+   --main-color-white-card: #fff;
+   --main-color-orahge: #FF9846;
+   --meny-background-color: #fff;
+   --order-background-color: #99ff55;
+   --modal-background-color: #fff;
+   --modal-color: #000000;
+   --modal-background-input: #fff;
+   --main-color-search: #A4ACAD;
+   --vector-color-orahge: #FF9846;
+   --border-botton-color: #fff;
+   --card-color-dark: #000;
+
+   --sorts-list-active-color:#000000;
+   --sorts-list-active-bg:#fff;
+
+   --messenger-opacity: 0.2;
+   --search-opacity: 1;
+
+   --color-border: #fff;
+
+   color-scheme: light;
+}
+
+.dark {
+   --main-background-color: #0b0808;
+   --main-color-text: #fff;
+   --main-color-btn: #070505;
+   --main-color-black: #fff;
+   --main-color-white: #0a0202;
+   --main-color-white-card: #544f4f;
+   --main-color-orahge: #FF9846;
+   --meny-background-color: #544f4f;
+   --order-background-color: #544f4f;
+   --modal-background-color: #FF9846;
+   --main-color-search: #FF9846;
+   --vector-color-orahge-dark: #FF9846;
+   --modal-window-background-color: #544f4f;
+   --border-botton-color: #FF9846;
+
+   --sorts-list-active-color:#fff;
+   --sorts-list-active-bg:#544f4f;
+
+
+   --messenger-opacity: 1;
+
+   color-scheme: dark;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+html,
+body {
+   font-size: 16px;
+   margin: 0 auto;
+   height: 100vh;
+   max-width: 120em;
+   width: 100%;
+   font-family: 'Roboto', sans-serif;
+}
+
+.container-all {
+   margin: 0 auto;
+   padding-right: 0.9375em;
+   padding-left: 0.9375em;
+   height: 100%;
+   max-width: 120em;
+   width: 100%;
+}
+
+@media (max-width: 768px) {
+   .container-all {
+      padding: 0em;
+   }
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 20em 73.125em 26.875em;
+   justify-content: center;
+   min-height: 100vh;
+   max-width: 120em;
+   width: 100%;
+   overflow: hidden;
+}
+
+@media (max-width: 1771px) {
+   .wrapper {
+      grid-template-columns: 20em 66.875em 26.875em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 1679px) {
+   .wrapper {
+      grid-template-columns: 20em 60.625em 26.875em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 1565px) {
+   .wrapper {
+      grid-template-columns: 20em 53em 26.875em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 1440px) {
+   .wrapper {
+      grid-template-columns: 17.5em 46em 23.75em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 1279px) {
+   .wrapper {
+      grid-template-columns: 14.735em 40.625em 20.625em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 1169px) {
+   .wrapper {
+      grid-template-columns: 14.735em 37.5em 20.625em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 999px) {
+   .wrapper {
+      grid-template-columns: 14.735em 32.5em 20.625em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 920px) {
+   .wrapper {
+      grid-template-columns: 12.735em 30em 14.375em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 840px) {
+   .wrapper {
+      grid-template-columns: 12.735em 27em 14.375em;
+      max-width: 110em;
+      width: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+   .wrapper {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      max-width: 768px;
+      min-height: 100%;
+   }
+}
